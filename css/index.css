@@ -1,0 +1,21 @@
+  body {
+      box-sizing: border-box;
+  }
+
+  #container {
+      border: 1px solid red;
+  }
+
+  #tiles {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  #tiles .tile {
+      width: 80px;
+      height: 80px;
+      margin: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
