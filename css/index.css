@@ -4,6 +4,8 @@
 
   #container {
       border: 1px solid red;
+      max-width: 70vw;
+      margin: 0 auto;
   }
 
   #tiles {
@@ -12,10 +14,28 @@
   }
 
   #tiles .tile {
-      width: 80px;
-      height: 80px;
-      margin: 1px;
+      width: 60px;
+      height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
+      animation-duration: 1s;
+  }
+
+  .fade {
+      animation-name: anim8
+  }
+
+  @keyframes anim8 {
+      0% {
+          opacity: 1;
+      }
+
+      50% {
+          opacity: 0;
+      }
+
+      100% {
+          opacity: 1;
+      }
   }
