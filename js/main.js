@@ -1,22 +1,12 @@
 'use strict';
 
-/*
-xs/sm 75vw
-375 | 80vw
-768 |40vw
-1024 | 59vw
-1440 | 42vw
->1440 | 24vw
-TODO add breakpoints
-TODO screenshot and thumb
-*/
 (function () {
     const maxTiles = 20;
     const colors = ['#ff9999', '#ff80ff', '#809fff', '#5cd6d6', '#85e085', '#ffd633', '#66d9ff', '#cc99ff', '#cccccc'];
     const tiles = document.getElementById('tiles');
 
     let randomTileIndex = 0;
-    let lastIndex = 0
+    let lastIndex = 0;
 
     // dynamically add tiles with diff bg color the tiles element
     for (let i = 0; i < maxTiles; i++) {
