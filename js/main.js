@@ -18,7 +18,7 @@
             const randomColor = colors[randomColorIndex];
 
             tile.classList.add('tile');
-            tile.textContent = i;
+            tile.textContent = i + 1;
             tile.style.backgroundColor = randomColor;
             tile.addEventListener('animationend', function (evt) {
                 this.classList.remove('fade');
